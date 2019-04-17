@@ -1,3 +1,5 @@
+REM   For direct mount workflow or direct mount without workflow use     "%ACT_JOBTYPE%" == "mount"
+
 if "%ACT_JOBTYPE%" == "scrub-mount" (
 
 "C:\Program Files\Microsoft SQL Server\110\Tools\Binn\sqlcmd.exe" -b -i "C:\Program Files\Actifio\scripts\masking_test.sql"
