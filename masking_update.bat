@@ -1,4 +1,4 @@
-REM   For direct mount workflow or direct mount without workflow use     "%ACT_JOBTYPE%" == "mount"
+REM   For direct mount workflow use     "%ACT_JOBTYPE%" == "mount"
 
 if "%ACT_JOBTYPE%" == "scrub-mount" (
 
