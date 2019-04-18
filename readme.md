@@ -17,19 +17,18 @@ If the SQL fails the prep-mount fails.
 
 This means the workflow needs to be setup as follows:
 
-Workflow Type:  Liveclone
-Schedule Type:  On Demand
-Mount for Pre-Processing:  On
-Post-Script:  masking_update.bat   (or whatever the bat file is called)
-Create New Virtual Application:  On
-SQL Server Database Name:  Should match the DB name in the SQL script
-(Note if DB is an instance, you will need to define a prefix)
+* Workflow Type:  Liveclone
+* Schedule Type:  On Demand
+* Mount for Pre-Processing:  On
+* Post-Script:  masking_update.bat   (or whatever the bat file is called)
+* Create New Virtual Application:  On
+* SQL Server Database Name:  Should match the DB name in the SQL script  (Note if DB is an instance, you will need to define a prefix)
 
 On the next panel you can set it up any way you like,  if the database is called smalldb, then ideally use this:
 
-Source DB name:      smalldb
-Prepmount DB name:   unmaskedsmalldb 
-Final mount DB name: maskedsmalldb
+* Source DB name:      smalldb
+* Prepmount DB name:   unmaskedsmalldb 
+* Final mount DB name: maskedsmalldb
 
 ### Validation
 
