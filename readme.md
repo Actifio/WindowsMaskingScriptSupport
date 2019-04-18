@@ -16,3 +16,9 @@ If the SQL fails the prep-mount fails.
 ### Validation
 
 Compare the masked index ID between the source DB (smalldb) and the mounted masked copy (maskedsmalldb).
+
+### Important details to be aware of
+
+1)  The SQLCMD path in the BAT file needs to be fully stated and must exist.   On some versions of SQL Server the path might be different.   
+2)  The SQLCMD has a -b to force a failure if the SQL fails.
+
