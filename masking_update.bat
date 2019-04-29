@@ -6,7 +6,7 @@ if "%1" == "test" ( GOTO maskcommand )
 exit /B 0
 
 :maskcommand
-"S:\Program Files\Microsoft SQL Server\100\Tools\Binn\sqlcmd.exe" -b -i "C:\Program Files\Actifio\scripts\simplesqlmask.sql"
+"C:\Program Files\Microsoft SQL Server\110\Tools\Binn\sqlcmd.exe" -b -i "C:\Program Files\Actifio\scripts\simplesqlmask.sql"
 IF %ERRORLEVEL% EQU 0 (GOTO cleanexit)
 exit /B 1
 
