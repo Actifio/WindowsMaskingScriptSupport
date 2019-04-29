@@ -42,5 +42,7 @@ Compare the masked index ID between the source DB (smalldb) and the mounted mask
 
 This ensures the script only runs after all parts of the prep-mount are complete including mounting of logs and starting of prepmounted Database.
 
+### Manual test of bat file
 
+You can run the bat file with a parameter of 'test' to do a manual set of masking.
 
