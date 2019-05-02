@@ -8,7 +8,7 @@ smalldb is a discovered and protected database and an on-demand workflow using L
 The sequence of events are for a workflow:
 
 1)  A LiveClone of smalldb is refreshed from the lastest snapshot
-2)  This LiveClone is prep-mounted to a masking host where smalldb is prep-mounted as a database called unmasked_smalldb.
+2)  This LiveClone is prep-mounted to a masking host where smalldb is prep-mounted as a database called premasking.
 The workflow needs to ensure the prep-mounted DB has that name or the SQL script will fail.
 3)  The workflow calls the bat file masking_update.bat as a post mount task (after the prepmount). This bat file runs SQL commands placed in masking_test.sql
 If the SQL fails the prep-mount fails.
@@ -27,7 +27,7 @@ This means the workflow needs to be setup as follows:
 On the next panel you can set it up any way you like,  if the database is called smalldb, then ideally use this:
 
 * Source DB name:      smalldb
-* Prepmount DB name:   unmaskedsmalldb 
+* Prepmount DB name:   premasking 
 * Final mount DB name: maskedsmalldb
 
 ### Validation
