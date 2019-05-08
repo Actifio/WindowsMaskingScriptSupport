@@ -1,6 +1,6 @@
 ### Introduction
 
-This repository contains examples to perform masking using SQL Scripts and Actifio.
+This repository contains examples to perform masking using a Windows bat file and Actifio.
 
 The sequence of events are for a workflow:
 
