@@ -1,9 +1,6 @@
 ### Introduction
 
-This script is a simple example to show how masking can be done using SQL Scripts and Actifio.
-This script works with a single database called smalldb.   
-
-smalldb is a discovered and protected database and an on-demand workflow using LiveClone has been created that does a masking prep-mount.
+This repository contains examples to perform masking using SQL Scripts and Actifio.
 
 The sequence of events are for a workflow:
 
