@@ -45,5 +45,10 @@ You can run the bat file with a parameter of 'test' to do a manual set of maskin
 By default this script is shown running a SQL command with a SQL script to do simple masking.   This lets you test the whole process without masking software.
 
 1)  The SQLCMD path in the BAT file needs to be fully stated and must exist.   On some versions of SQL Server the path might be different.   
+To find your sqlcmd.exe use the Windows 'where' command (its like the Unix 'which' command):
+
+```C:\Users\av>where sqlcmd.exe
+C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\SQLCMD.EXE```
+
 2)  The SQLCMD has a -b to force a failure if the SQL fails.
 
